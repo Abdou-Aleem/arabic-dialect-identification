@@ -2,8 +2,8 @@
 the project aims to develop an NLP system that can accurately identify the dialect of an Arabic text.
 We used a combination of pre-trained BERT models, Naive Bayes Multinomial, Random Forest, and fine-tuning techniques along with large datasets to train and test the system.
 The goal is to improve the accuracy of identifying the dialect of Arabic text.
-## website link:
-https://arabic-dialect-id.streamlit.app/
+
+
 ## APIs:
 To make our Arabic Dialect Identification models accessible to users, we deployed three models (arabert, arabicbert, and arbert) on the Hugging Face platform and utilized their APIs to integrate the models into our application.
 - https://huggingface.co/lafifi-24/arabicBert_arabic_dialect_identification
@@ -11,20 +11,11 @@ To make our Arabic Dialect Identification models accessible to users, we deploye
 - https://huggingface.co/lafifi-24/arabert_arabic_dialect_identification
 
 ## Dataset Construction
-The dataset used in this project is a collection of Arabic sentences and their corresponding dialect labels. The dataset was constructed by combining data from multiple sources:
-| Name |Source| Paper|
-| :---:| :---: | :---: |
-| arabic_pos_dialect|https://huggingface.co/datasets/arabic_pos_dialect| --- |
-| IADD: An integrated Arabic dialect identification dataset|https://github.com/JihadZa/IADD|https://www.sciencedirect.com/science/article/pii/S2352340921010519|
-|QADI: Arabic Dialect Identification in the Wild|https://github.com/qcri/QADI|https://www.researchgate.net/publication/341396032_Arabic_Dialect_Identification_in_the_Wild|
-|The MADAR Arabic Dialect Corpus and Lexicon|https://sites.google.com/nyu.edu/madar/?pli=1|https://aclanthology.org/L18-1535.pdf|
+The dataset used in this project is a collection of Arabic sentences and their corresponding dialect labels. The dataset was constructed by combining data from multiple sources
 
 
 In addition to these sources, we also collected 10,000 sentences in Modern Standard Arabic (MSA) from Wikipedia. These MSA examples were added to the dataset to balance the number of examples across the different dialects.
 
-The following plot shows the distribution of data in our Arabic Dialect Identification dataset.The plot shows the number of examples we use for each dialect, along with the corresponding source for each example.
-
-![Alt text](./data/data_plot.png?raw=true)
 
 ## Preprocessing
 Before training the model, the data is preprocessed by performing the following steps:
